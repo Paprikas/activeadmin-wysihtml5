@@ -48,7 +48,7 @@
       $button = $toolbar.find('a[data-wysihtml5-command=createLink]').click ->
         $modal = $editor.find(".modal-link").clone()
         $field = $modal.find("input")
-        $tab_contents = $modal.find("[data-tab]").hide()
+        $tab_contents = $modal.find("[data-wytab]").hide()
         $tab_handles = $modal.find("[data-tab-handle]").click ->
           $tab_contents.hide()
           $tab_contents.filter($(@).attr("href")).show()
@@ -92,7 +92,7 @@
         $url = $modal.find('[name=url]')
         $scaler = $modal.find('.input.radio')
         selectedAsset = null
-        $tab_contents = $modal.find("[data-tab]").hide()
+        $tab_contents = $modal.find("[data-wytab]").hide()
         $tab_handles = $modal.find("[data-tab-handle]").click ->
           $tab_contents.hide()
           $tab_contents.filter($(@).attr("href")).show()
