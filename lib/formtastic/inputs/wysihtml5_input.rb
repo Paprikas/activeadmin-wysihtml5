@@ -137,7 +137,7 @@ module Formtastic
               <li><a data-tab-handle="1" href="#modal-link-email">#{I18n.t("wysihtml5.dialog.link.email_title")}</a></li>
               <li><a data-tab-handle="1" href="#modal-link-anchor">#{I18n.t("wysihtml5.dialog.link.anchor_title")}</a></li>
             </ul>
-            <div data-tab="1" id="modal-link-url">
+            <div data-wytab="1" id="modal-link-url">
               <div class="input string">
                 <label>#{I18n.t("wysihtml5.dialog.link.url")}</label>
                 <input type="text" name="url" placeholder="http://">
@@ -160,7 +160,7 @@ module Formtastic
                 </label>
               </div>
             </div>
-            <div data-tab="1" id="modal-link-email">
+            <div data-wytab="1" id="modal-link-email">
               <div class="input string">
                 <label>#{I18n.t("wysihtml5.dialog.link.email")}</label>
                 <input type="text" name="email" placeholder="your@email.com">
@@ -170,7 +170,7 @@ module Formtastic
                 <input type="text" name="text" placeholder="#{I18n.t("wysihtml5.dialog.link.your_text_here")}">
               </div>
             </div>
-            <div data-tab="1" id="modal-link-anchor">
+            <div data-wytab="1" id="modal-link-anchor">
               <div class="input string">
                 <label>#{I18n.t("wysihtml5.dialog.link.anchor")}</label>
                 <input type="text" name="anchor" placeholder="anchor-name">
@@ -196,7 +196,7 @@ module Formtastic
               <li><a data-tab-handle="1" href="#modal-image-gallery">#{I18n.t("wysihtml5.dialog.image.gallery_title")}</a></li>
               <li><a data-tab-handle="1" href="#modal-image-upload">#{I18n.t("wysihtml5.dialog.image.upload_title")}</a></li>
             </ul>
-            <div data-tab="1" id="modal-image-url">
+            <div data-wytab="1" id="modal-image-url">
               <div class="input string">
                 <label>#{I18n.t("wysihtml5.dialog.image.url")}</label>
                 <input type="text" name="url" placeholder="http://" />
@@ -218,10 +218,10 @@ module Formtastic
                 </select>
               </div>
             </div>
-            <div data-tab="1" id="modal-image-upload">
+            <div data-wytab="1" id="modal-image-upload">
               <div class="asset-uploader"></div>
             </div>
-            <div data-tab="1" id="modal-image-gallery">
+            <div data-wytab="1" id="modal-image-gallery">
               <div class="assets-container">
                 <ul></ul>
               </div>
@@ -264,7 +264,7 @@ module Formtastic
             #{I18n.t("wysihtml5.dialog.video.dialog_title")}
           </div>
           <div class="modal-content">
-            <div data-tab="1" id="modal-video-url">
+            <div data-wytab="1" id="modal-video-url">
               <div class="input string">
                 <label>#{I18n.t("wysihtml5.dialog.video.url")}</label>
                 <input type="text" name="url" placeholder="http://www.youtube.com/watch?v=oHg5SJYRHA0">
