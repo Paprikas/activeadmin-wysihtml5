@@ -103,7 +103,7 @@
         refreshAssets = ->
           $gallery.empty()
 
-          $.getJSON '/finance/assets.json', (data) ->
+          $.getJSON window.activeAdminWysihtml5Assets, (data) ->
             $.each data, (i, asset) ->
               $img = $("<img/>")
               $img.attr
@@ -120,7 +120,7 @@
         initUploader = ->
           uploader = new qq.FileUploader
             element: $uploader.get(0)
-            action: '/finance/assets.json'
+            action: window.activeAdminWysihtml5Assets
             onComplete: ->
               refreshAssets()
               $tab_handles.eq(1).click()
