@@ -31,6 +31,15 @@ $ rake activeadmin_wysihtml5:install:migrations
 $ rake db:migrate
 ```
 
+And set `window.activeAdminWysihtml5Assets` variable for path to `Asset` model in your `active_admin.js` file:
+
+```
+# active_admin.js
+...
+window.activeAdminWysihtml5Assets = '/finance/assets.json'
+...
+```
+
 ## Usage
 This gem provides you with a custom formtastic input called `:wysihtml5` to build out an html editor.
 All you have to do is specify the `:as` option for your inputs.
